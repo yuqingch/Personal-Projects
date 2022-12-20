@@ -1,0 +1,92 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+#education {
+  font-size: 28px;
+  font-family: "Audiowide", serif;
+}
+
+#skills {
+  font-size: 28px;
+  font-family: "Audiowide", serif;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+#reason {
+  display: block;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  column-gap: 15px;
+  row-gap: 15px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.card {
+  border: 2px solid gray;
+  border-radius: 4px;
+  vertical-align: bottom;
+  font-family: "Trirong", serif;
+  background-color: lightcyan;
+}
+
+/* header styles */
+header li{
+  display: inline-block;
+  padding: 15px 12px 10px;
+}
+header a {
+  color:white;
+  text-decoration: none;
+}
+header {
+  background-color: #031a5f;
+  font-family: "Audiowide", serif;
+}
+
+/* picture styles */
+main section {
+  height:50vh;
+  color:black;
+  text-align: center;
+  background: url("coding.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+main h1 {
+  font-size: 100px;
+}
+
+/* Style buttons */
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+select {
+  display: block;
+  margin: 0 auto;
+}
