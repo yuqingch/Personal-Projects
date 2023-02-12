@@ -11,7 +11,7 @@ div {
 }
 
 #education {
-  font-size: 28px;
+  font-size: 24px;
   font-family: "Audiowide", serif;
 }
 
@@ -32,11 +32,12 @@ div {
   grid-auto-rows: auto;
   column-gap: 15px;
   row-gap: 15px;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  padding-left: 16vw;
+  padding-right: 16vw;
 }
 
 .card {
+  border-right: 30px;
   border: 2px solid gray;
   border-radius: 4px;
   vertical-align: bottom;
@@ -45,12 +46,12 @@ div {
 }
 
 /* header styles */
-header li{
+header li {
   display: inline-block;
   padding: 15px 12px 10px;
 }
 header a {
-  color:white;
+  color: white;
   text-decoration: none;
 }
 header {
@@ -60,8 +61,8 @@ header {
 
 /* picture styles */
 main section {
-  height:50vh;
-  color:black;
+  height: 50vh;
+  color: black;
   text-align: center;
   background: url("coding.jpg");
   background-repeat: no-repeat;

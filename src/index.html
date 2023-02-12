@@ -1,141 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Change this to your name-->
-  <meta name="author" content="Yuqing Chen" />
-  <meta name="description" content="WEB222 Fall Final Assessment" />
+    <!-- Change this to your name-->
+    <meta name="author" content="Yuqing Chen" />
+    <meta name="description" content="WEB222 Fall Final Assessment" />
 
-  <title>Yuqing Chen</title>
-  
-  <!-- Add font libraries -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Classless CSS Stylesheet - https://andybrewer.github.io/mvp/ -->
-  <link rel="stylesheet" href="https://unpkg.com/mvp.css@1.12/mvp.css" />
-  <!-- Optional CSS Overrides -->
-  <link rel="stylesheet" href="./css/styles.css" />
+    <title>Yuqing Chen</title>
+
+    <!-- Add font libraries -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Classless CSS Stylesheet - https://andybrewer.github.io/mvp/ -->
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css@1.12/mvp.css" />
+    <!-- Optional CSS Overrides -->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
-  <header>
-  <ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="#about">About me</a></li>
-  </ul>
-  </header>
+    <header>
+      <ul>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#contact">Contact me</a></li>
+      </ul>
+    </header>
 
-  <main>
-    <section>
+    <main>
+      <section></section>
+      <h1>Yuqing Chen</h1>
+      <h2>Software Developer</h2>
+      <button class="btn" type="submit" onclick="window.open('yuqingchenResume.pdf')">
+        <i class="fa fa-download"></i> Download CV
+      </button>
+      <button class="btn" onclick="location.href='#contact'">Contact me</button>
+    </main>
+
+    <section id="education">
+      <h2>Education</h2>
     </section>
-    <h1>Yuqing Chen</h1>
-    <h2>Software Developer</h2>
-    <button class="btn" type="submit" onclick="window.open('yuqingchenResume.pdf')"><i class="fa fa-download"></i> Download CV</button>
-    <button class="btn" onclick="location.href='#contact'">Contact me</button>
-  </main>
-
-  <section>
-  <div class="cards">
-    <div class="card">
-      <h2>About me and Academic Honesty</h2>
-      <p>I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy.</p>
-      <p>No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use.</p>
-      <p>I also declare that no part of this assignment has been distributed to other students.</p> 
-    </div>
-    <div id="about" class="card">
-      <h2>Basic Information</h2>
-      <p>Name: Yuqing Chen</p>
-      <p>Date: December 4, 2022</p>
-      <p>Course: WEB222NII</p>
-      <p>Professor: Robin Li</p>
-    </div>
-  </div>
-  </section>
-  
-  <section id="education">
-    <h2>Education</h2>
-  </section>
-  <div class="cards">
-    <div class="card">
-      <h2>Bachelor's Degree</h2>
-      <h3>University of Toronto</h3>
-      <p>2016-2020</p>
-      <p>Bachelor of Science</p>
-      <p>Computational Cognition</p> 
-    </div>
-    <div class="card">
-      <h2>Diploma</h2>
-      <h3>Seneca College</h3>
-      <p>2022-Present</p>
-      <p>Computer Programing and Analysis</p> 
-    </div>
-  </div>
-
-  <section>
-    <h2>Skills</h2>
-  </section>
-  <div id="skills" class="cards">
-    <div class="card">
-      <p>Programming: HTML CSS JavaScript Python C C++ Java </p>
-      <p>Database: SQL, MySQL, MongoDB</p>
-      <p>Technologies: Git, Github, Linux</p> 
-    </div>
-  </div>
-  
-  <section>
-    <h2>Contact me</h2>
-  </section>
-  <section id="contact">
-    <form action="https://httpbin.org/post" method="post">
-      <label for="fname">First name:</label>
-      <input type="text" id="fname" name="fname" required>
-      <label for="lname">Last name:</label>
-      <input type="text" id="lname" name="lname" required>
-      <label for="email">Email Address</label>
-      <input type="text" id="email" name="email" required>
-      <label for="phone">Contact Number:</label>
-      <input type="text" id="phone" name="phone" required>
-      <label for="address">Street Address:</label>
-      <input type="text" id="address" name="address">
-      <label for="city">City:</label>
-      <input type="text" id="city" name="city">
-      <label for="province">Province:</label>
-      <select id="provinces">
-        <option value="AB">AB</option>
-        <option value="BC">BC</option>
-        <option value="MB">MB</option>
-        <option value="NB">NB</option>
-        <option value="NL">NL</option>
-        <option value="NT">NT</option>
-        <option value="NS">NS</option>
-        <option value="NU">NU</option>
-        <option value="ON">ON</option>
-        <option value="PE">PE</option>
-        <option value="QC">QC</option>
-        <option value="SK">SK</option>
-        <option value="YT">YT</option>
-      </select>
-      <label for="pcode">Postal Code:</label>
-      <input type="text" id="pcode" name="pcode" pattern="[a-zA-Z][0-9][a-zA-Z](-| |)[0-9][a-zA-Z][0-9]" title="e.g. M1T 0H1" required>
-      <label for="how">How did you find out/hear about this website?</label>
-      <input type="text" id="hear" name="hear">
-
-      <div id="reason">
-        <input type="radio" id="Job_Offer" name="reason" value="Job_Offer">
-        <label for="Job_Offer">Job Offer</label><br>
-        <input type="radio" id="School" name="reason" value="School">
-        <label for="School">School</label><br>
-        <input type="radio" id="Other" name="reason" value="Other">
-        <label for="Other">Other</label><br><br> 
+    <div class="cards">
+      <div class="card">
+        <h2>Bachelor's Degree</h2>
+        <h3>University of Toronto</h3>
+        <p>2016-2020</p>
+        <p>Bachelor of Science</p>
+        <p>Computational Cognition</p>
       </div>
-      <textarea rows ="5" cols ="10" name = "info" placeholder="Message"></textarea>
-      <input type="submit" value="Submit">
-    </form>
-  </section> 
-  
+      <div class="card">
+        <h2>Seneca College</h2>
+        <p>2022-Present</p>
+        <p>Computer Programing and Analysis</p>
+      </div>
+    </div>
+
+    <section>
+      <h2>Skills Summary</h2>
+    </section>
+    <div id="skills" class="cards">
+      <div class="card">
+        <p>Programming Languages: C++, C, Python, Java</p>
+        <p>Database Management: SQL, MySQL, MongoDB, Oracle 12c</p>
+        <p>Operating Systems/Services: Git, Linux, Windows, Microsoft Azure, AWS</p>
+        <p>Web Development: HTML, CSS, JavaScript</p>
+      </div>
+    </div>
+
+    <section id="contact">
+      <h2>Contact me</h2>
+    </section>
+    <section id="contact">
+      <form action="https://httpbin.org/post" method="post">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" required />
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" required />
+        <label for="email">Email Address</label>
+        <input type="text" id="email" name="email" required />
+        <label for="phone">Contact Number:</label>
+        <input type="text" id="phone" name="phone" required />
+        <label for="address">Street Address:</label>
+        <input type="text" id="address" name="address" />
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" />
+        <label for="province">Province:</label>
+        <select id="provinces">
+          <option value="AB">AB</option>
+          <option value="BC">BC</option>
+          <option value="MB">MB</option>
+          <option value="NB">NB</option>
+          <option value="NL">NL</option>
+          <option value="NT">NT</option>
+          <option value="NS">NS</option>
+          <option value="NU">NU</option>
+          <option value="ON">ON</option>
+          <option value="PE">PE</option>
+          <option value="QC">QC</option>
+          <option value="SK">SK</option>
+          <option value="YT">YT</option>
+        </select>
+        <label for="pcode">Postal Code:</label>
+        <input
+          type="text"
+          id="pcode"
+          name="pcode"
+          pattern="[a-zA-Z][0-9][a-zA-Z](-| |)[0-9][a-zA-Z][0-9]"
+          title="e.g. M1T 0H1"
+          required
+        />
+        <label for="how">How did you find out/hear about this website?</label>
+        <input type="text" id="hear" name="hear" />
+
+        <div id="reason">
+          <input type="radio" id="Job" name="reason" value="Job" />
+          <label for="Job">Job</label><br />
+          <input type="radio" id="School" name="reason" value="School" />
+          <label for="School">School</label><br />
+          <input type="radio" id="Other" name="reason" value="Other" />
+          <label for="Other">Other</label><br /><br />
+        </div>
+        <textarea rows="5" cols="10" name="info" placeholder="Message"></textarea>
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
   </body>
   <!-- Main App JavaScript File -->
   <script src="./js/app.js"></script>
